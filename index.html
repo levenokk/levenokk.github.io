@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/libs.css">
     <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
@@ -22,7 +22,9 @@
             <div class="header__left"><a class="header__logo" href=""><img src="img/header/logo.png" alt="Tpi company"></a>
               <p class="header__text">Продажа и аренда коммерческой недвижимости</p>
             </div>
-            <div class="header__right"><a class="header__btn" href="#">Указать контакты</a><a class="header__btn" href="#">Заказать звонок</a></div>
+            <div class="header__right">
+              <div class="header__link-wrapper"><a class="header__link" href="#">+ 795 211 105 68</a></div><a class="header__btn open-popup-link" href="#callback">Заказать звонок</a>
+            </div>
           </div>
         </div>
       </header>
@@ -32,31 +34,55 @@
           <div class="container">
             <div class="intro__inner">
               <div class="intro__left">
-                <h1 class="intro__title">Получайте до 17% годовых от инвестиций в торговую и офисную недвижимость</h1>
-                <ul class="intro__list">
-                  <li class="intro__list-item">
-                    <svg class="ico check">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>Рассрочка при покупке на 6 – 9 месяцев, под 0 %
-                  </li>
-                  <li class="intro__list-item">
-                    <svg class="ico check">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>Развивающийся густонаселенный район
-                  </li>
-                  <li class="intro__list-item">
-                    <svg class="ico check">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>Арендные каникулы на 3 месяца при въезде арендатора
-                  </li>
-                  <li class="intro__list-item">
-                    <svg class="ico check">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>Поможем найти арендаторов для сдачи помещений в аренду
-                  </li>
-                </ul><a class="intro__btn" href="#">Оставить заявку</a>
+                <h1 class="intro__title">Продажа и аренда недвижимости в бизнес-центре Smola в Москве, рядом со станцией "Водный стадион"</h1>
+                <p class="intro__text">Получайте до 17% годовых от инвестиций в коммерческую  недвижимость или арендуйте помещение под офис или магазин по цене от 12 000 руб/м<sup>2</sup> в год</p>
+                <div class="intro__items">
+                  <div class="intro__item">
+                    <div class="intro__item-ico">
+                      <svg class="ico check2">
+                        <use xlink:href="img/sprite.svg#check2"></use>
+                      </svg>
+                    </div>
+                    <div class="intro__item-inner">
+                      <h5 class="intro__item-title">Рассрочка при покупке</h5>
+                      <p class="intro__item-text">на 6 – 9 месяцев, под 0 %</p>
+                    </div>
+                  </div>
+                  <div class="intro__item">
+                    <div class="intro__item-ico">
+                      <svg class="ico check2">
+                        <use xlink:href="img/sprite.svg#check2"></use>
+                      </svg>
+                    </div>
+                    <div class="intro__item-inner">
+                      <h5 class="intro__item-title">Развивающийся густонаселенный район</h5>
+                    </div>
+                  </div>
+                  <div class="intro__item">
+                    <div class="intro__item-ico">
+                      <svg class="ico check2">
+                        <use xlink:href="img/sprite.svg#check2"></use>
+                      </svg>
+                    </div>
+                    <div class="intro__item-inner">
+                      <h5 class="intro__item-title">густонаселенный район</h5>
+                      <p class="intro__item-text">на 3 месяца при въезде</p>
+                    </div>
+                  </div>
+                  <div class="intro__item">
+                    <div class="intro__item-ico">
+                      <svg class="ico check2">
+                        <use xlink:href="img/sprite.svg#check2"></use>
+                      </svg>
+                    </div>
+                    <div class="intro__item-inner">
+                      <h5 class="intro__item-title">Поможем найти арендаторов</h5>
+                      <p class="intro__item-text">для сдачи помещений в аренду</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__btn-wrapper"><a class="intro__btn" href="#">Получить консультацию</a></div>
               </div>
-              <div class="intro__right"><img src="img/intro/laptop.png" alt="laptop" draggable="false"></div>
             </div>
           </div>
         </section>
@@ -435,7 +461,7 @@
             <div class="plan__step">
               <div class="plan__step-cloud">
                 <div class="plan__step-title">Заявка</div>
-                <p class="plan__step-text">Оставьте заявку на сайте, напишите нам в WhatsApp или позвоните по номеру <a href='#'>указать номер</a></p><a class="request__right-btn" href="#">Оставить заявку</a>
+                <p class="plan__step-text">Оставьте заявку на сайте, напишите нам в WhatsApp или позвоните по номеру <a href='tel:+79521110568'>+ 795 211 105 68</a></p>
               </div>
               <div class="plan__step-digit">1</div>
             </div>
@@ -475,6 +501,7 @@
               <div class="plan__step-digit">6</div>
             </div>
           </div>
+          <div class="plan__btn-wrapper"><a class="request__right-btn" href="#">Оставить заявку</a></div>
         </section>
         <section class="rent" style="background-image:url(img/rent/bg.png)">
           <div class="container">
@@ -689,7 +716,7 @@
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
                 </div>
-                <div class="extra-questions__item-title">Позвоните по номеру</div><a class="extra-questions__item-link" href="tel:+380685214436">+38 068 521 44 36</a>
+                <div class="extra-questions__item-title">Позвоните по номеру</div><a class="extra-questions__item-link" href="tel:79521110568">+ 795 211 105 68</a>
               </div>
               <div class="extra-questions__item">
                 <div class="extra-questions__item-icon">
@@ -697,7 +724,7 @@
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
                 </div>
-                <div class="extra-questions__item-title">Пишите нам на почту</div><a class="extra-questions__item-link" href="mailto:TPICompany@gmail.com">TPICompany@gmail.com</a>
+                <div class="extra-questions__item-title">Пишите нам на почту</div><a class="extra-questions__item-link" href="mailto:bcsmola@tpicompany.ru">bcsmola@tpicompany.ru</a>
               </div>
               <div class="extra-questions__item">
                 <div class="extra-questions__item-icon">
@@ -705,7 +732,7 @@
                     <use xlink:href="img/sprite.svg#whatsapp"></use>
                   </svg>
                 </div>
-                <div class="extra-questions__item-title">Пишите нам в WhatsApp</div><a class="extra-questions__item-link" href="https://whatsapp/mfvv1" target="_blank">https://whatsapp/mfvv1</a>
+                <div class="extra-questions__item-title">Пишите нам в WhatsApp</div><a class="extra-questions__item-link" href="https://api.whatsapp.com/send?phone=79521110568" target="_blank">Начать чат</a>
               </div>
             </div>
           </div>
@@ -717,11 +744,22 @@
             <div class="header__left"><a class="header__logo" href=""><img src="img/header/logo2.png" alt="Tpi company"></a>
               <p class="header__text">Продажа и аренда коммерческой недвижимости</p>
             </div>
-            <div class="header__right"><a class="header__btn" href="#">Указать контакты</a><a class="header__btn" href="#">Заказать звонок</a></div>
+            <div class="header__right">
+              <div class="header__link-wrapper"><a class="header__link" href="#">+ 795 211 105 68</a></div><a class="header__btn open-popup-link" href="#callback">Заказать звонок</a>
+            </div>
           </div>
-          <p class="copyright">Все права защищены © 2020</p>
+          <p class="copyright">Все права защищены © 2021</p>
         </div>
       </footer>
+      <div class="white-popup mfp-hide" id="callback">
+        <div class="white-popup__inner">
+          <h2 class="sentence__title">Заказ обратного звонка</h2>
+          <form class="white-popup__form" id="callback-form">
+            <input class="white-popup__form-input" type="tel" placeholder="Номер телефона" name="phone" required>
+            <button class="form__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="js/libs.js"></script>
     <script src="js/app.js"></script>
