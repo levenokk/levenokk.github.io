@@ -11,16 +11,6 @@ accordions.forEach(function (e) {
 "use strict";
 "use strict";
 
-var btn = document.querySelector('.header__mobile-button');
-var closeBtn = document.querySelector('.mobile-menu__close');
-var toggleMenu = function toggleMenu() {
-  var mobileMenu = document.querySelector('.mobile-menu');
-  mobileMenu.classList.toggle('open');
-};
-btn.addEventListener('click', toggleMenu);
-closeBtn.addEventListener('click', toggleMenu);
-"use strict";
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -30,5 +20,12 @@ function scrollToTop() {
 var arrowUp = document.querySelector('#arrow');
 arrowUp.addEventListener('click', function () {
   scrollToTop();
+});
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 200) {
+    arrowUp.classList.add('show');
+  } else {
+    arrowUp.classList.remove('show');
+  }
 });
 "use strict";
