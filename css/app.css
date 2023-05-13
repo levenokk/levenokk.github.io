@@ -324,7 +324,29 @@ img.svg {
 
 .header {
   background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 13px 66px rgba(39, 50, 56, 0.06);
+          box-shadow: 0 13px 66px rgba(39, 50, 56, 0.06);
+  -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
+  transition: opacity .2s ease, -webkit-transform .2s ease;
+  -o-transition: transform .2s ease, opacity .2s ease;
+  transition: transform .2s ease, opacity .2s ease;
+  transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  z-index: 11;
   padding: 32px 0; }
+  @media only screen and (max-width: 568px) {
+    .header.hide {
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+              transform: translateY(-100%);
+      opacity: 0; } }
   @media only screen and (max-width: 768px) {
     .header {
       padding: 24px 0; } }
@@ -374,14 +396,55 @@ img.svg {
 
 .header__buttons {
   margin-top: 16px; }
-  @media only screen and (max-width: 568px) {
-    .header__buttons {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .header__buttons .call-button:nth-child(2) {
-        margin-top: 16px; } }
+  .header__buttons.ordinary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header__buttons.ordinary > .call-button:nth-child(1) {
+      margin-right: 20px; }
+    @media only screen and (max-width: 568px) {
+      .header__buttons.ordinary {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .header__buttons.ordinary > .call-button:nth-child(1) {
+          margin: 0; }
+        .header__buttons.ordinary > .call-button:nth-child(2) {
+          margin-top: 20px; } }
+  .header__buttons.item {
+    height: 70px;
+    position: relative; }
+    .header__buttons.item > .call-button:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .header__buttons.item > .call-button:nth-child(3) {
+      position: absolute;
+      right: 0; }
+    @media only screen and (max-width: 768px) {
+      .header__buttons.item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        height: auto; }
+        .header__buttons.item .call-button {
+          position: static !important;
+          -webkit-transform: translateX(0) !important;
+              -ms-transform: translateX(0) !important;
+                  transform: translateX(0) !important; }
+          .header__buttons.item .call-button:nth-child(2) {
+            margin-top: 20px;
+            margin-bottom: 20px; } }
 
 .select {
   position: relative; }
@@ -490,6 +553,13 @@ img.svg {
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg); }
 
+.header__languages {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(39, 50, 56, 0.06); }
+  .header__languages a:first-child {
+    margin-right: 56px; }
+
 .item-card__img {
   background: white;
   -webkit-box-shadow: 0 13px 66px rgba(39, 50, 56, 0.06);
@@ -595,11 +665,14 @@ img.svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px;
+  padding-top: 253px;
   padding-bottom: 80px;
   margin-bottom: 43px;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (max-width: 568px) {
+    .intro {
+      padding-top: 310px; } }
 
 .intro__title {
   margin-bottom: 37px;
@@ -768,11 +841,14 @@ img.svg {
 
 .item-intro {
   background-image: url("/img/deliveries/bg.png");
-  padding-top: 72px;
+  padding-top: 255px;
   padding-bottom: 80px;
   margin-bottom: 72px;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .item-intro {
+      padding-top: 354px; } }
 
 .item-intro__title {
   margin-bottom: 11px; }

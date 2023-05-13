@@ -9,6 +9,22 @@ accordions.forEach(function (e) {
   });
 });
 "use strict";
+
+var prevScrollpos = window.pageYOffset;
+window.addEventListener('scroll', function () {
+  var currentScrollPos = window.scrollY;
+  if (window.scrollY > 200) {
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").classList.remove('hide');
+    } else {
+      document.getElementById("header").classList.add('hide');
+    }
+    prevScrollpos = currentScrollPos;
+  } else {
+    document.getElementById("header").classList.remove('hide');
+  }
+});
+"use strict";
 "use strict";
 
 function scrollToTop() {
