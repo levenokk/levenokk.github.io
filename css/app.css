@@ -400,11 +400,9 @@ img.svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .header__buttons.ordinary > .call-button:nth-child(1) {
-      margin-right: 20px; }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
     @media only screen and (max-width: 568px) {
       .header__buttons.ordinary {
         -webkit-box-orient: vertical;
@@ -413,38 +411,13 @@ img.svg {
                 flex-direction: column; }
         .header__buttons.ordinary > .call-button:nth-child(1) {
           margin: 0; }
-        .header__buttons.ordinary > .call-button:nth-child(2) {
-          margin-top: 20px; } }
-  .header__buttons.item {
-    height: 70px;
-    position: relative; }
-    .header__buttons.item > .call-button:nth-child(2) {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
-    .header__buttons.item > .call-button:nth-child(3) {
-      position: absolute;
-      right: 0; }
-    @media only screen and (max-width: 768px) {
-      .header__buttons.item {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-        height: auto; }
-        .header__buttons.item .call-button {
-          position: static !important;
-          -webkit-transform: translateX(0) !important;
-              -ms-transform: translateX(0) !important;
-                  transform: translateX(0) !important; }
-          .header__buttons.item .call-button:nth-child(2) {
-            margin-top: 20px;
-            margin-bottom: 20px; } }
+        .header__buttons.ordinary > .call-button:nth-child(3) {
+          margin-top: 20px; }
+        .header__buttons.ordinary .text {
+          margin-top: 20px;
+          -webkit-box-ordinal-group: 4;
+              -ms-flex-order: 3;
+                  order: 3; } }
 
 .select {
   position: relative; }
@@ -474,84 +447,6 @@ img.svg {
     .select .select__icon svg {
       width: 11px;
       height: 6px; }
-
-@media only screen and (max-width: 1200px) {
-  .header__mobile-button {
-    width: 40px;
-    height: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    cursor: pointer; }
-    .header__mobile-button span {
-      width: 100%;
-      height: 2px;
-      display: block;
-      background-color: #273238;
-      border-radius: 2px; }
-    .header__mobile-button:hover span {
-      -webkit-transition: background-color .2s ease;
-      -o-transition: background-color .2s ease;
-      transition: background-color .2s ease;
-      background-color: #FCD631; } }
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  background-color: white;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 12;
-  overflow: auto; }
-  .mobile-menu.open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .mobile-menu .mobile-menu__inner {
-    margin: auto;
-    padding: 15px 0; }
-  .mobile-menu .header__buttons {
-    display: block !important; }
-    .mobile-menu .header__buttons .call-button {
-      width: 100%; }
-    .mobile-menu .header__buttons .call-button:nth-child(2) {
-      margin: 0;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-  .mobile-menu .header__nav .header__link {
-    margin-bottom: 20px;
-    margin-right: 0; }
-  .mobile-menu .mobile-menu__close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 15px;
-    top: 30px; }
-    .mobile-menu .mobile-menu__close span {
-      width: 100%;
-      border-radius: 2px;
-      height: 2px;
-      background-color: #273238;
-      display: block;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-      .mobile-menu .mobile-menu__close span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-                transform: rotate(45deg); }
 
 .header__languages {
   margin-bottom: 20px;
